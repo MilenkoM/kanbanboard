@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import { ColumnContainer, ColumnTitle } from './styles'
 
 interface ColumnProps {

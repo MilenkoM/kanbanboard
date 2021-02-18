@@ -23,12 +23,15 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json'
   },
+  settings: {
+    'import/resolver': {
+        'node': {
+            'paths': ['src'],
+            'extensions': ['.js', '.ts', '.d.ts']
+        },
+    },
+  },   
   rules: { 'linebreak-style': 'off',
-    'prettier/prettier': ['error',
-      {
-        endOfLine: 'auto',
-      },
-    ],
-  },
-  };
+      'no-use-before-define' : 'off',
+      '@typescript-eslint/no-use-before-define': 'warn' }, 
 };
