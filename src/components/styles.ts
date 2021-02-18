@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 export const AppContainer = styled.div
 `
 align-items: flex-start;

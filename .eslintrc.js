@@ -23,18 +23,12 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json'
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-  ],
-  rules: {
-    'linebreak-style': 'off',
-    'prettier/prettier': [
-      'error',
+  rules: { 'linebreak-style': 'off',
+    'prettier/prettier': ['error',
       {
         endOfLine: 'auto',
       },
     ],
   },
-  },
+  };
 };
