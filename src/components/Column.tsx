@@ -1,18 +1,20 @@
-import React from 'react'
-import { ColumnContainer, ColumnTitle } from './styles'
+import React from "react";
+import { ColumnContainer, ColumnTitle } from "./styles";
 
 interface ColumnProps {
-	text : string
+  text: string;
 }
 
+// eslint-disable-next-line import/prefer-default-export
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const Column = ({
-	text,
-	children
+  text,
+  children,
 }: React.PropsWithChildren<ColumnProps>) => {
-	return (
-		<ColumnContainer>
-			<div>{text}</div>
-			{children}
-		</ColumnContainer>
-	)
-}
+  return (
+    <ColumnContainer>
+      <div>{text}</div>
+      {children}
+    </ColumnContainer>
+  );
+};

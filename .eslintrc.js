@@ -5,6 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
+    'plugin:import/typescript',
     'airbnb',
     'plugin:@typescript-eslint/recommended',
     'plugin:jest/recommended',
@@ -27,11 +28,22 @@ module.exports = {
     'import/resolver': {
         'node': {
             'paths': ['src'],
-            'extensions': ['.js', '.ts', '.d.ts']
+            'extensions': ['.js', '.ts', '.d.ts','.jsx','.tsx']
         },
     },
   },   
-  rules: { 'linebreak-style': 'off',
-      'no-use-before-define' : 'off',
-      '@typescript-eslint/no-use-before-define': 'warn' }, 
+  rules: { 'import/extensions': [
+    'error',
+    'ignorePackages',
+    {
+      'js': 'never',
+      'jsx': 'never',
+      'ts': 'never',
+      'tsx': 'never'
+    }
+ ],
+ 'import/prefer-default-export': 'off',
+ 'react/jsx-filename-extension': [2, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
+    'no-use-before-define' : 'off',
+    '@typescript-eslint/no-use-before-define': 'warn' }, 
 };
