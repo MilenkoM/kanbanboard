@@ -8,13 +8,16 @@ function App() {
     // eslint-disable-next-line react/jsx-filename-extension
     <AppContainer>
       <Column text="To Do">
-        <Card text="generate app scafold" />
+        <Card text="generate app project!" />
       </Column>
       <Column text="First Step">
-        <Card text="once again app scafold" />
+        <Card text="Promise resolved" />
+      </Column>
+      <Column text="Meu">
+        <Card text="Neiliane" />
       </Column>
       <Column text="Done">
-        <Card text="Neiliane" />
+        <Card text="Vamos morar no Porto!" />
       </Column>
       <Column text="Em portugues de Brasil">
         <Card text="Meu chapa!" />
